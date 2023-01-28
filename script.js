@@ -7,5 +7,10 @@ let text = document.getElementById('evaluatedText');
             str = str.trim();
             let arr = str.split(' ');
             // console.log(arr.length);
-            headings.innerHTML = arr.length;
+            if(arr[0] == ''){
+                headings.innerHTML = 0;
+            }
+            else{
+                headings.innerHTML = arr.length;
+            }
         })
